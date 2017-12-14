@@ -13,9 +13,10 @@ $height: {{height}};
     margin: auto;
     width: $width;
     height: $height;
-    background: #000;
     overflow: hidden;
     user-select: none;
+    background-image: url('https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/share%20img/aventador-coupe-facebook-og.jpg');
+    background-size: 1349px 392px;
 }
 
 .btn-overlay {
@@ -39,16 +40,12 @@ $height: {{height}};
 .banner {
     position: relative;
     height: 100%;
-    background: #000;
 }
 
 /* Frame Base Style
 --------------------------------------------------------------------------- */
 .frame {
     absolute: top left right bottom;
-
-    font-family: 'Helvetica Neue', Helvetica, sans-serif;
-    color: #fff;
     text-transform: uppercase;
     letter-spacing: -1px;
 }
@@ -109,9 +106,19 @@ $height: {{height}};
   -o-animation: rotate-animation 1s infinite linear;
   animation: rotate-animation 1s infinite linear;
 }
-
+strong {
+  color: #0839f9;
+  font-family: 'Spectral SC', serif;
+}
 @keyframes rotate-animation {
   100% {
     transform: rotate(360deg);
   }
 }
+
+/* size adjustments */
+@media only screen and (max-width: 600px) {
+        #ad {
+          background-size: 1349px 836px;
+        }
+        }
